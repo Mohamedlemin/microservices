@@ -16,6 +16,7 @@
     <module>customerMicroservice</module>
     <module>fraud</module>
     <module>eruka-service</module>
+    <module>clients</module>
   </modules>
 
   <properties>
@@ -54,6 +55,13 @@
       <version>${spring-cloud.version}</version>
       <type>pom</type>
       <scope>import</scope>
+    </dependency>
+
+    <dependency>
+      <groupId>org.springframework.cloud</groupId>
+      <artifactId>spring-cloud-starter-openfeign</artifactId>
+      <version>3.0.6</version>
+
     </dependency>
 
   </dependencies>
