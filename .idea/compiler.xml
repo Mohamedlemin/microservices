@@ -8,10 +8,12 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="apigw" />
+        <module name="notification" />
         <module name="customerMicroservice" />
         <module name="clients" />
-        <module name="eruka-service" />
         <module name="fraud" />
+        <module name="amqp" />
+        <module name="eruka-service" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>

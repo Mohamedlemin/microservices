@@ -1,5 +1,18 @@
 server:
-  port: 8082
+  port: 8083
+
+spring:
+  application:
+    name: api-gateway
+  zipkin:
+    base-url: http://localhost:9411
+  cloud:
+    gateway:
+      routes:
+        - id: customer
+          uri: lb://CUSTOMER
+          predicates:
+            - Path=/api/v1/customers/**
 
 eureka:
   client:
@@ -7,9 +20,3 @@ eureka:
       defaultZone: http://localhost:8761/eureka
     fetch-registry: true
     register-with-eureka: true
-
-spring:
-  application:
-    name: ApiGetWay
-  zipkin:
-    base-url: http://localhost:9411
