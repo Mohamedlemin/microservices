@@ -9,15 +9,15 @@
         <outputRelativeToContentRoot value="true" />
         <module name="apigw" />
         <module name="notification" />
-        <module name="customerMicroservice" />
         <module name="clients" />
         <module name="fraud" />
         <module name="amqp" />
         <module name="eruka-service" />
+        <module name="customer" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="customer" target="17" />
+      <module name="customerMicroservice" target="17" />
     </bytecodeTargetLevel>
   </component>
 </project>
